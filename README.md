@@ -2,11 +2,11 @@
 
 Discord bot for QWERTY/Kedmanee Thai user that forgot to switch their keyboard layout.
 
-# Invite
+## Invite
 
 [http://godeinvite.guntxjakka.me](http://godeinvite.guntxjakka.me)
 
-# Usage
+## Usage
 
 ``~conv {params}``
 
@@ -15,6 +15,6 @@ Discord bot for QWERTY/Kedmanee Thai user that forgot to switch their keyboard l
 
 The bot will then reply with converted phrase.
 
-# API
+## API
 
 See [g;ode API](https://github.com/gxjakkap/godeapi) .
