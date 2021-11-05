@@ -1,5 +1,4 @@
 import requests
-import urllib
 import json
 from commands.base_command import BaseCommand
 
