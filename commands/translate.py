@@ -15,11 +15,11 @@ class conv(BaseCommand):
         r.encoding = 'utf-8'
         ans = r.json()
         try:
-            msg = ans['results']
+            pmsg = ans['results']
+            msg = 'Results: '+str(pmsg)
         except: 
             if ans['status']==400:
-                pmsg = ans['Error']
-                msg = 'Results: '+str(pmsg)
+                msg = ans['Error']
             else:
                 msg = ans
         await message.channel.send(msg)
