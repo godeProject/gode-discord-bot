@@ -18,7 +18,8 @@ class conv(BaseCommand):
             msg = ans['results']
         except: 
             if ans['status']==400:
-                msg = ans['Error']
+                pmsg = ans['Error']
+                msg = 'Results: '+str(pmsg)
             else:
                 msg = ans
         await message.channel.send(msg)
