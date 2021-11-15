@@ -1,6 +1,4 @@
 import requests
-import urllib
-import json
 from commands.base_command import BaseCommand
 
 
@@ -15,5 +13,12 @@ class conv(BaseCommand):
         actualparams = ' '.join(params)
         r = requests.get(url+actualparams)
         r.encoding = 'utf-8'
-        msg = r.json()
+        ans = r.json()
+        try:
+            if ans['status']==200:
+                msg = ans['results']
+            else: 
+                msg = ans['Error']
+        except:
+            msg = ans
         await message.channel.send(msg)
