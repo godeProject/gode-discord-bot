@@ -14,8 +14,11 @@ class conv(BaseCommand):
         r = requests.get(url+actualparams)
         r.encoding = 'utf-8'
         ans = r.json()
-        if ans['status']==200:
+        try:
             msg = ans['results']
-        else: 
-            msg = ans['Error']
+        except: 
+            if ans['status']==400:
+                msg = ans['Error']
+            else:
+                msg = ans
         await message.channel.send(msg)
