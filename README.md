@@ -2,6 +2,10 @@
 
 Discord bot for QWERTY/Kedmanee Thai user that forgot to switch their keyboard layout.
 
+## Deprecation
+
+This repository is now deprecated. No further update will be provided. Public g;ode bot will now use [gode-discordjs](https://github.com/godeproject/gode-discordjs) code.
+
 ## Invite
 
 [http://godeinvite.guntxjakka.me](http://godeinvite.guntxjakka.me)
